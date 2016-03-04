@@ -13,6 +13,7 @@ class Options extends App
 
     public function printCurrentDayDataMeta($field)
     {
+        $field['label'] = __("Shortcode", 'opening-hours-slug')." <em>[opening-hours]</em> ".__("will print out information displayed below.", 'opening-hours-slug');
         $field['message'] = $this->getTodaysOpeningHours();
         return $field;
     }
