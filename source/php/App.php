@@ -41,11 +41,13 @@ class App
         //Get exception for this day
         if (!is_null($unique_exception) && is_array($unique_exception)) {
             $return_value = $unique_exception['ex_info'];
+            $filter_is_exception = true;
         } else {
             $return_value = get_field($this->getMetaKeyByDayId(date("w")), 'option');
+            $filter_is_exception = false;
         }
 
-        return apply_filters('openhours/shortcode', $return_value);
+        return apply_filters('openhours/shortcode', $return_value, $filter_is_exception);
 
     }
 
