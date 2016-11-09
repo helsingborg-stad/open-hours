@@ -4,7 +4,7 @@
  * Plugin Name:       Opening Hours (HBG)
  * Plugin URI:        (#plugin_url#)
  * Description:       Adds the ability to add opening hours and display them via shortcodes (today, full week)
- * Version:           2.0.2
+ * Version:           1.0.2
  * Author:            Sebastian Thulin
  * License:           MIT
  * License URI:       https://opensource.org/licenses/MIT
